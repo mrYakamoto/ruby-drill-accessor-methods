@@ -28,7 +28,7 @@ class Employee
   def initialize(name, position)
     @name     = name
     @position = position
-    @id       = rand(100_000_000).to_s.insert(2, '-').insert(6, '-')
+    @id       = rand(10_000_000 .. 100_000_000).to_s.insert(2, '-').insert(6, '-')
   end
  
   def name
